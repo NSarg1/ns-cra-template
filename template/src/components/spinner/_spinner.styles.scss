@@ -1,0 +1,8 @@
+.spinner {
+    min-width: 2rem;
+    min-height: 2rem;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    animation: rotate 1s linear infinite;
+}

@@ -1,0 +1,74 @@
+// MEDIA QUERY MANAGER
+
+@mixin media($breakpoint) {
+    @media only screen and (max-width: $breakpoint + px) {
+        @content;
+    }
+}
+
+// @mixin respond($breakpoint) {
+//     @if $breakpoint == 600 {
+//         @media only screen and (max-width: 37.5em) {
+//             @content;
+//         } //600px
+//     }
+//     @if $breakpoint == 900 {
+//         @media only screen and (max-width: 56.25em) {
+//             @content;
+//         } //900px
+//     }
+//     @if $breakpoint == 1200 {
+//         @media only screen and (max-width: 75em) {
+//             @content;
+//         } //1200px
+//     }
+//     // @if $breakpoint == big-desktop {
+//     // 	 @media only screen and (min-width: 112.5em) { @content };    //1800
+//     // }
+// }
+
+// Flex positions
+
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/////////////////////////////
+
+@mixin flexColumn($justify, $align) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin hideScrollbar {
+    //Hide scrollbar
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: none;
+}

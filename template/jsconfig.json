@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "baseUrl": "src",
+        "jsx": "react"
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "build"],
+    "paths": {
+        "App/*": "./App/*",
+        "assets/*": "./assets/*",
+        "components/*": "./components/*",
+        "configs/*": "./configs/*",
+        "contexts/*": "./contexts/*",
+        "effects/*": "./effects/*",
+        "hocs/*": "./hocs/*",
+        "providers/*": "./providers/*",
+        "redux/*": "./redux/*",
+        "sass/*": "./sass/*",
+        "layout/*": "./layout/*",
+        "utilities/*": "./utilities/*",
+        "views/*": "./views/*"
+    }
+}
