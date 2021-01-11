@@ -8,5 +8,5 @@
 - Routing and etc.
 
 ```console
-npx create-react-app my-new-app <i> --template </i> ns-react-app
+npx create-react-app my-new-app --template ns-react-app
 ```
