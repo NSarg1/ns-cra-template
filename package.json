@@ -1,6 +1,6 @@
 {
     "name": "cra-template-ns-react-app",
-    "version": "0.2.6",
+    "version": "0.2.7",
     "private": false,
     "main": "template.json",
     "keywords": [

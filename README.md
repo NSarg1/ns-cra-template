@@ -9,6 +9,6 @@
 etc.
 
 
-```bash
+```
 npx create-react-app my-app --template ns-react-app
 ```
