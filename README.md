@@ -9,6 +9,9 @@
 - Custom hooks and components
 etc.
 
-```shell
-npx create-react-app my-new-app --template ns-react-app
+<div style="background-color: #111; padding: 7px 15px; border-radius: 5px; display: flex; align-items: center; font-size: 14px; color: #fff; word-spacing: 3px;">
+<span style="color: #d89216">npx</span>&nbsp;create-react-app my-new-app&nbsp; <span style="color: #ababab"> <i>--template</i>&nbsp;</span>ns-react-app</div>
+
+```bash
+npx create-react-app my-app --template ns-react-app
 ```
