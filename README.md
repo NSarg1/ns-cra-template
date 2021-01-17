@@ -6,9 +6,12 @@
 - Right Redux configuration with persistance
 - Routing 
 - Custom hooks and components
-etc.
+- SASS for styling
+- Prettier and ESLint for consistency
+- Custom hooks and components
+and much more coming soon... 🤗
 
 
-```
+```console
 npx create-react-app my-app --template ns-react-app
 ```
