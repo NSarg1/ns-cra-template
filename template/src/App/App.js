@@ -1,6 +1,7 @@
 import { memo } from "react";
-import { ReactComponent as ReactLogo } from "assets/logo.svg";
+import { ReactComponent as ReactLogo } from "src/assets/logo.svg";
 const MemoLogo = memo(ReactLogo);
+
 const App = () => {
     return (
         <div className="app">
