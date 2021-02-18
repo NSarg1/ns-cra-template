@@ -1,7 +1,7 @@
 import axios from "axios";
-// import { store } from "redux/store";
-import baseURL from "configs/baseURL.config";
-// import { userLogout } from "redux/auth/auth.actions";
+// import { store } from "src/redux/store";
+import baseURL from "src/configs/baseURL.config";
+// import { userLogout } from "src/redux/auth/auth.actions";
 
 // AXIOS GLOBAL CONFIG
 axios.defaults.baseURL = `https://${baseURL}/api/`;

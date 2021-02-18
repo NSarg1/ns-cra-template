@@ -8,8 +8,8 @@ import { BrowserRouter } from "react-router-dom";
 // REDUX TOOLS
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import { store, persistor } from "redux/store";
-import "configs/axios.config";
+import { store, persistor } from "src/redux/store";
+import "src/configs/axios.config";
 
 ReactDOM.render(
     <Provider store={store}>
