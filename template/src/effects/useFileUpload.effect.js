@@ -1,6 +1,6 @@
 import { useState } from "react";
 //EFFECTS
-import useUploadProgress from "effects/useUploadProgress.effect";
+import useUploadProgress from "src/effects/useUploadProgress.effect";
 
 const useFileUpload = (INITIAL_STATE = [], isMulti) => {
     const { progressStatus, setProgressStatus, onUploadProgress } = useUploadProgress();

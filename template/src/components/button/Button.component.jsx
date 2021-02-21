@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import Spinner from "components/spinner/Spinner.component";
+import Spinner from "src/components/spinner/Spinner.component";
 
 const Button = (props) => {
     const { children, className, isLoading = false, disabled, variant, ...otherProps } = props;

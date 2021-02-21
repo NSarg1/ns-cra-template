@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import useSessionStorage from "effects/useSessionStorage.effect";
+import useSessionStorage from "src/effects/useSessionStorage.effect";
 
 const usePagination = (initialState = [], ROWS_PER_PAGE = 10) => {
     const [pageNum, setPageNum] = useState(1);
