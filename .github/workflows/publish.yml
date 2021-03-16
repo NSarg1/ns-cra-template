@@ -17,7 +17,6 @@ jobs:
               with:
                   node-version: 12
                   registry-url: https://www.npmjs.com/package/cra-template-ns-react-app
-            - name: publish
-              run: npm publish --access public
+            - publish: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
