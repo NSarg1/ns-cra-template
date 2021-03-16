@@ -1,6 +1,6 @@
 {
     "name": "cra-template-ns-react-app",
-    "version": "0.2.11",
+    "version": "0.2.12",
     "private": false,
     "main": "template.json",
     "keywords": [
@@ -15,7 +15,7 @@
         "react-router-dom",
         "prettier"
     ],
-    "description": "Prestructred CRA template for quick start with React && Redux",
+    "description": "Pre-structured CRA template for quick start with React && Redux",
     "repository": {
         "type": "git",
         "url": "https://github.com/NSarg7/ns-cra-template.git"
