@@ -13,13 +13,7 @@ module.exports = {
         },
     },
     plugins: ["prettier", "react-hooks"],
-    extends: [
-        "plugin:prettier/recommended",
-        "prettier/react",
-        "eslint:recommended",
-        // "plugin:react/recommended",
-        "react-app",
-    ],
+    extends: ["plugin:prettier/recommended", "eslint:recommended", "react-app"],
     rules: {
         "prettier/prettier": "warn",
         "react/prop-types": 0,
