@@ -10,14 +10,13 @@ on:
 
 jobs:
     publish-npm:
-        runs-on: ubuntu
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v1
               with:
                   node-version: 12
                   registry-url: https://www.npmjs.com/package/cra-template-ns-react-app
-            - run: npm ci
-            - run: npm publish
+            - run: npm publish --access public
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
