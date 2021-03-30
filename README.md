@@ -10,7 +10,7 @@
 -   Custom hooks and components
 -   SASS for styling
 -   Prettier and ESLint for consistency
--   Custom hooks and components
+-   Custom hooks
     and much more coming soon... 🤗
 
 ```console
@@ -19,4 +19,5 @@ npx create-react-app my-app --template ns-react-app
 
 #### Changelogs
 
-0.3.4 - node-sass replaced with sass
+- 0.3.5 - Removed unnecessary files and imports.
+- 0.3.4 - node-sass replaced with sass.

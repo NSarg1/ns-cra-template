@@ -1,9 +1,8 @@
 import { combineReducers } from "redux";
 import { persistReducer } from "redux-persist";
-
 import { persistConfig, authPersistConfig } from "./persist-configs";
 
-// COMMON
+// REDUCERS
 import authReducer from "./auth/auth.reducer.js";
 
 const rootReducer = combineReducers({

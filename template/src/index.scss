@@ -1,10 +1,4 @@
 // FONTS
-@import "./assets/fonts/fonts.styles.scss";
+@import "./assets/fonts/fonts.styles";
 // APP MAIN STYLES CONFIGS
-@import "./sass/main.scss";
-// COMPONENTS
-@import "./components/components.styles.scss";
-// VIEWS
-@import "./views/views.styles";
-// APP
-@import "./App/app";
+@import "./sass/main";

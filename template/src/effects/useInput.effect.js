@@ -2,58 +2,23 @@ import { useState } from "react";
 
 const useInput = (initialState = {}) => {
     const [inputState, setState] = useState(initialState);
-    const [invalidMessages, setInvalidMessages] = useState({});
     const handleInput = (event) => {
         const { value, name, type, checked } = event.target;
-        if (invalidMessages[name]) {
-            const invalidMessagesCopy = { ...invalidMessages };
-            delete invalidMessagesCopy[name];
-            setInvalidMessages(invalidMessagesCopy);
-        }
         // HANDLE VALUES FOR CHECKBOX INPUT
-        else if (type === "checkbox") {
-            setState((prevState) => ({ ...prevState, [name]: checked ? true : false }));
+        if (type === "checkbox") {
+            let checkedValue = value === "true" ? true : value;
+            setState({ ...inputState, [name]: checked ? checkedValue : false });
         } else {
-            // HANDLE VALUES FOR OTHER INPUT TYPES
-            setState((prevState) => ({ ...prevState, [name]: value }));
+            // HANDLE VALUES FOR REST INPUT TYPES
+            setState({ ...inputState, [name]: value });
         }
     };
     // HANDLE VALUES FOR SELECT
-    const updateInputState = (value) => {
-        const invalidMessagesArr = Object.keys(invalidMessages);
-        if (invalidMessagesArr.length !== 0) {
-            const emptyMessages = {};
-            invalidMessagesArr.forEach((item) => (emptyMessages[item] = ""));
-            setInvalidMessages((prevState) => ({ ...prevState, ...emptyMessages }));
-        }
-        setState((prevState) => ({ ...prevState, ...value }));
-    };
+    const updateInputState = (value) => setState({ ...inputState, ...value });
+    // REPLACE OR RESET STATE
+    const setInputState = (newState = initialState) => setState(newState);
 
-    const setInputState = (newState = initialState) => {
-        setState(newState);
-    };
-
-    const handleInvalidMessage = (eventOrData, newMessage) => {
-        setInvalidMessages({});
-        if (eventOrData) {
-            if (typeof eventOrData === "string")
-                return setInvalidMessages({ ...invalidMessages, [eventOrData]: newMessage });
-
-            eventOrData.preventDefault();
-            const { validationMessage, name } = eventOrData.target;
-
-            setInvalidMessages({ ...invalidMessages, [name]: newMessage || validationMessage });
-        }
-    };
-
-    return {
-        inputState,
-        handleInput,
-        updateInputState,
-        setInputState,
-        invalidMessages,
-        handleInvalidMessage,
-    };
+    return { inputState, handleInput, updateInputState, setInputState };
 };
 
 export default useInput;
