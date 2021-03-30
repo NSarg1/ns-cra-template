@@ -6,18 +6,18 @@ import baseURL from "src/configs/baseURL.config";
 // AXIOS GLOBAL CONFIG
 axios.defaults.baseURL = `https://${baseURL}/api/`;
 axios.interceptors.request.use((request) => {
-    // const reduxStore = store.getState();
-    // const { auth } = reduxStore;
-    // request.headers["Authorization"] = `Bearer ${token}`;
+   // const reduxStore = store.getState();
+   // const { auth } = reduxStore;
+   // request.headers["Authorization"] = `Bearer ${token}`;
 
-    return request;
+   return request;
 });
 
 axios.interceptors.response.use(
-    (response) => response,
-    (error) => {
-        return Promise.reject(error);
-    }
+   (response) => response,
+   (error) => {
+      return Promise.reject(error);
+   }
 );
 
 export default axios;

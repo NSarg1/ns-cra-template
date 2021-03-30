@@ -12,12 +12,12 @@ import { store, persistor } from "src/redux/store";
 import "src/configs/axios.config";
 
 ReactDOM.render(
-    <Provider store={store}>
-        <BrowserRouter>
-            <PersistGate persistor={persistor}>
-                <App />
-            </PersistGate>
-        </BrowserRouter>
-    </Provider>,
-    document.getElementById("root")
+   <Provider store={store}>
+      <BrowserRouter>
+         <PersistGate persistor={persistor}>
+            <App />
+         </PersistGate>
+      </BrowserRouter>
+   </Provider>,
+   document.getElementById("root")
 );

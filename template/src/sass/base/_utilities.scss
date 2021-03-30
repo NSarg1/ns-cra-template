@@ -1,17 +1,17 @@
 // GENERATE CLASSES FOR MARGIN - TOP, RIGHT, LEFT AND BOTTOM
 @for $index from 5 through 100 {
-    @if $index % 5 == 0 {
-        .u-mt--#{$index} {
-            margin-top: $index + px;
-        }
-        .u-mr--#{$index} {
-            margin-right: $index + px;
-        }
-        .u-ml--#{$index} {
-            margin-left: $index + px;
-        }
-        .u-mb--#{$index} {
-            margin-bottom: $index + px;
-        }
-    }
+   @if $index % 5 == 0 {
+      .u-mt--#{$index} {
+         margin-top: $index + px;
+      }
+      .u-mr--#{$index} {
+         margin-right: $index + px;
+      }
+      .u-ml--#{$index} {
+         margin-left: $index + px;
+      }
+      .u-mb--#{$index} {
+         margin-bottom: $index + px;
+      }
+   }
 }

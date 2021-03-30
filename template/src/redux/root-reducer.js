@@ -6,7 +6,7 @@ import { persistConfig, authPersistConfig } from "./persist-configs";
 import authReducer from "./auth/auth.reducer.js";
 
 const rootReducer = combineReducers({
-    auth: persistReducer(authPersistConfig, authReducer),
+   auth: persistReducer(authPersistConfig, authReducer),
 });
 
 export default persistReducer(persistConfig, rootReducer);
