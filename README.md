@@ -17,5 +17,6 @@ npx create-react-app my-app --template ns-react-app
 
 #### Changelogs
 
+-   0.3.10 - Removed some unnecessary libs.
 -   0.3.5 - Removed unnecessary files and imports.
 -   0.3.4 - node-sass replaced with sass.
